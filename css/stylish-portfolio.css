@@ -1,0 +1,809 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    /*font-weight: 700;*/
+    color: rgb(255,255,255);
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transform: translateX(250px);
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/header.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    border-top: 10px solid #d6f2ed;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+.map iframe {
+    pointer-events: none;
+}
+
+/* Footer */
+
+footer {
+    padding: 50px 0;
+    color: rgb(255,255,255);
+}
+
+.bottom {
+    background-color: rgba(20, 107, 87, 0.95);
+    padding: 20px 0;
+    border-bottom: 10px solid #d6f2ed;
+}
+
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+/*============================================
+
+JUNTA - CUSTOM
+
+==============================================*/
+
+#lower-top {
+    padding: 48px;
+    background: rgba(255, 140, 0, 0.8);
+    position: absolute;
+    margin: 150px 0 -200px 0;
+    color: white;
+    display: ;
+}
+
+#lower-top a {
+    background: yellow;
+    color: black;
+    display: block;
+    width: 302px;
+    float: right;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 100px 0 0;
+}
+
+div#lower-top p {
+    margin: 0 0 0 100px;
+}
+
+.left-section,.right-section {
+    padding: 7em;
+}
+
+.left-section.lightgreen{
+    background-color: rgba(173, 230, 219, 0.5);
+}
+
+.right-section {
+    text-align: left;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.left-section h2 {
+    letter-spacing: 2px;
+    font-size: 53px;
+    word-spacing: 10px;
+    line-height: 80px;
+}
+
+.yellow-button {
+    color: black;
+    background: rgba(255, 255, 0, 0.6);
+    padding: 15px 100px;
+}
+
+p {
+    text-align: left;
+    line-height: 30px;
+    letter-spacing: 2px
+}
+
+section {
+    width: 100%;
+    float: left;
+    padding: 60px 0;
+}
+
+section.one {
+    background-color: white;
+    padding: 0;
+}
+
+section.two {
+    display: table;
+    color: #fff;
+    background: url(../img/overzarayda.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.two .text-box {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 3em 6em;
+    height: 500px;
+    margin: 50px;
+}
+
+section.three {
+    background-color: white;
+}
+
+section.four {
+    background-color: rgb(255, 216, 147);
+    height: 620px;
+    text-align: center;
+    padding: 20px;
+}
+
+.four input[type="text"] {
+    height: 45px;
+    width: 200px;
+    border: 1px solid white;
+    background: #ffd27f;
+    padding: 10px;
+}
+
+.four img,
+.four-v img{
+    width: 600px;
+    height: 300px;
+    margin: 50px 0;
+}
+
+section#testimonials {
+    display: table;
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    padding: 0px;
+    background: url(../img/gradient---zarayda---foto-V4.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.carousel-control.right,
+.carousel-control.left{
+    background: none;
+}
+
+.container.content {
+    margin: 200px auto;
+}
+
+.btn-dark {
+    background: none !important;
+}
+
+.yellow-button2 {
+    color: black;
+    background: rgba(255, 255, 0, 0.6);
+    padding: 15px 50px;
+}
+
+.video-business-school {
+    background: url(../img/VBS-6817.jpg) no-repeat center center scroll;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+section#video-intro {
+    background: url(../img/Zarayda-gardient.png) no-repeat center center scroll;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+section#video-intro .container.text-center,
+section#vimeo-intro .container.text-center,
+section#v-intro .container.text-left,
+section#v-intro-2 .container.text-center,
+section#v-intro-3 .container.text-left
+{
+    padding: 0 132px;
+}
+
+.spacing {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+section#testimony {
+    background-color: rgba(20, 107, 87, 0.95);
+    color: rgb(255, 255, 255);
+}
+
+section#testimony h2 {
+    letter-spacing: 8px;
+    line-height: 50px;
+    margin: 0 0 0 60px;
+}
+
+
+section#testimony img {
+    width: 280px;
+    height: 200px;
+    border: 2px solid;
+}
+
+section#vimeo-intro,
+section.vlogs-orange {
+    background-color: rgb(255, 216, 147);
+}
+
+section#v-intro-2 {
+    background-color: rgb(251, 255, 0);
+}
+
+
+section#Simone img {
+    width: 250px;
+    height: 200px;
+    border: 2px solid white;
+}
+
+section#Simone,
+section.vlogs-lightblue {
+    background-color: rgb(175, 226, 234);
+}
+
+section#elma img {
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+}
+
+section#elma {
+    background-color: rgba(20, 107, 87, 0.95);
+    color: rgb(255,255,255);
+}
+
+section#v-intro {
+    background-color: rgb(243, 243, 243);
+}
+
+section#yousrah {
+    display: table;
+    width: 100%;
+    height:;
+    color: #000;
+    padding: 0;
+    background: url(../img/gradient---zarayda---foto-V4.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+section#yousrah img {
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+}
+
+.cover {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 60px 0;
+}
+
+section.four-v {
+    background-color: rgb(175, 226, 234);
+    min-height: 620px;
+    text-align: center;
+    padding: 20px;
+}
+
+.four-v input[type="text"] {
+    height: 45px;
+    width: 200px;
+    border: 1px solid white;
+    background: #afe2ea;
+    padding: 10px;
+}
+
+.bottom a {
+    color: rgb(224, 218, 218);
+}
+
+.over-mij {
+    background: url(../img/over-mij-cover.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.left-section.grey {
+    background-color: rgb(243, 243, 243);
+}
+
+.right-section.greenish {
+    background-color: rgb(251, 255, 0);
+}
+
+.right-section.greenish img{
+    width: 286px;
+    height: 286px;
+    border: 4px solid white;
+}
+
+img#pic1 {
+    margin: -55px 0 0 0;
+}
+
+img#pic2 {
+    margin: -111px 0 0 225px;
+}
+
+img#pic3 {
+    margin: -125px 0 0 0;
+}
+
+section.televisie {
+    padding: 0;
+}
+
+.black-button {
+    color: #f5f5f5;
+    background: rgb(0, 0, 0);
+    padding: 15px 50px;
+}
+
+a.black-button:hover,
+a.yellow-button:hover,
+a.yellow-button2:hover,
+#lower-top a:hover {
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+}
+
+.over-mij {
+    background: url(../img/over-mij-cover.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.gratis {
+    background: url(../img/gratis-header.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.vlogs {
+    background: url(../img/vlogs-header.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+aside {
+    width: 100%;
+    float: left;
+    padding: 60px 0;
+}
+
+aside.orange,
+aside.orange input[type="text"] {
+    background-color: orange;
+}
+
+input[type="text"] {
+    height: 45px;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+aside.lightblue,
+aside.lightblue input[type="text"] {
+    background-color: rgb(214, 242, 237);
+}
+
+aside.lightblue input[type="text"] {
+    border: 1px solid black;
+}
+
+.right-section.presenter-image {
+    position: relative;
+    width: 50%;
+    min-height: 838px;
+    background: url(../img/IMG_7023.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.panel.with-nav-tabs.panel-default.categories {
+    border-color: white;
+}
+.categories .panel-heading {
+    border-color: white;
+    background-color: white;
+}
+ .categories .nav-tabs>li>a {
+    border: 2px solid yellow;
+    width: 140px;
+    margin-right: 15px;
+}
+.categories .nav-tabs {
+    border: none;
+}
+.categories .nav-tabs>li.active>a, 
+.categories .nav-tabs>li.active>a:focus, 
+.categories .nav-tabs>li.active>a:hover{
+    border-color:yellow ;
+}
+
+/*====================================================================
+
+MOBILE RESPONSIVENESS
+
+=======================================================================*/
+@media only screen and (max-width: 320px){
+
+#lower-top {
+    margin: 100px 0 0 0 !important;
+}
+
+}
+
+@media only screen and (max-width: 360px){
+
+#lower-top {
+    margin: 200px 0 0 0;
+}
+
+}
+
+@media only screen and (min-width: 581px) and (max-width: 640px){
+
+.right-section.presenter-image {
+    width: 100%;
+    min-height: 400px;
+}
+aside.lightblue, aside.lightblue input[type="text"],
+aside.orange, aside.orange input[type="text"] {
+    font-size: 12px;
+}
+section#video-intro .container.text-center, 
+section#vimeo-intro .container.text-center, 
+section#v-intro .container.text-left, 
+section#v-intro-2 .container.text-center, 
+section#v-intro-3 .container.text-left {
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+#lower-top {
+    padding: 15px 10px;
+    position: absolute;
+    margin: 1px 0 0 0;
+}
+
+.four input[type="text"] {
+    height: 39px;
+    width: 179px;
+    padding: 10px;
+}
+
+}
+
+@media only screen and (max-width: 580px){
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+.text-vertical-center h1 {
+    font-size: 2.5em;
+}
+
+#lower-top {
+    padding: 0;
+    width: 100%;
+}
+
+.left-section, .right-section {
+    padding: 20px;
+}
+
+.left-section h2 {
+    letter-spacing: 0px;
+    font-size: 36px;
+    word-spacing: 0px;
+    line-height: 50px;
+}
+
+div#lower-top p {
+    margin: 0px 0 0 3px;
+}
+
+#lower-top a {
+    margin: 0 1px;
+    width: 100%;
+}
+.two .text-box {
+    margin: 0;
+    padding: 1em;
+}
+
+section.four {
+    height: auto;
+}
+img{
+    width: 100% !important;
+}
+section#v-intro-3 .container.text-left {
+    padding: 0px;
+}
+
+section#video-intro .container.text-center, 
+section#vimeo-intro .container.text-center, 
+section#v-intro .container.text-left, 
+section#v-intro-2 .container.text-center, 
+section#v-intro-3 .container.text-left {
+    padding: 20px;
+    width: 100%;
+}
+
+img#pic1 {
+    margin: 0;
+}
+img#pic3,
+img#pic2 {
+    margin: 10px 0 0 0;
+}
+
+.right-section.presenter-image {
+    width: 100%;
+    min-height: 400px;
+}
+h3 {
+    font-size: 20px;
+}
+.four img, .four-v img {
+    height: auto;
+}
+.yellow-button {
+    padding: 15px 60px;
+}
+}
